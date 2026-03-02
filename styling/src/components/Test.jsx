@@ -1,25 +1,16 @@
 import React from 'react';
 
-function App() {
-  const [highlight, setHighlight] = React.useState();
+// don't change the Component name "App"
+export default function App() {
+    function handleLogin() {
 
-  function handleClick(color) {
-    setHighlight(color)
-  }
-
-  return (
-    <div id="app">
-      <h1 className={highlight && `highlight-${highlight}`}>CSS is great!</h1>
-      <menu>
-        <li>
-          <button onClick={() => handleClick('green')}>Yes</button>
-        </li>
-        <li>
-          <button onClick={() => handleClick('red')}>No</button>
-        </li>
-      </menu>
-    </div>
-  );
+    }
+    return (
+        <div>
+            <p class>Style me!</p>
+            <button onClick={handleLogin}>
+                Toggle style
+            </button>
+        </div>
+    );
 }
-
-export default App;
